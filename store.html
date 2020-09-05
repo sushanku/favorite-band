@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is Band Image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2bd2bfd72f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="store.js" async></script>
+
+    <title>Band Store</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./store.html">STORE</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">Imagine Dragons</h1>
+      <div class="container">
+        <button class="btn btn-header" type="button">
+          Get our latest album
+        </button>
+      </div>
+      <button class="btn btn-header btn-play" type="button">
+        <i class="fas fa-play fa-lg"></i>
+      </button>
+      <!-- TODO: Find a suitable background image -->
+      <!-- <button>&#9658;</button> -->
+    </header>
+    <section class="container content-section">
+      <h2 class="section-header">Music</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Album 1</span>
+          <img class="shop-item-image" src="images/Album 1.png" alt="Album 1" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$11.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Album 2</span>
+          <img class="shop-item-image" src="images/Album 2.png" alt="Album 2" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$9.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Album 3</span>
+          <img class="shop-item-image" src="images/Album 3.png" alt="Album 3" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$15.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Album 4</span>
+          <img class="shop-item-image" src="images/Album 4.png" alt="Album 4" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$13.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">MERC</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Coffee</span>
+          <img
+            class="shop-item-image"
+            src="images/Cofee.png"
+            alt="Shirt Image"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">T-shirt</span>
+          <img
+            class="shop-item-image"
+            src="images/Shirt.png"
+            alt="Shirt Image"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button type="button" class="shop-item-btn">
+              <i class="btn btn-primary fas fa-shopping-cart">Add to cart</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">Item</span>
+        <span class="cart-price cart-header cart-column">Price</span>
+        <span class="cart-quantity cart-header cart-column">Quantity</span>
+      </div>
+      <div class="card-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img
+              class="cart-item-image"
+              src="images/Shirt.png"
+              width="100"
+              height="100"
+            />
+            <span class="cart-item-title">T-shirt</span>
+          </div>
+          <span class="cart-price cart-column">$19.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1" />
+            <button type="button" class="cart-quantity-btn">
+              <i class="fas fa-trash-alt btn btn-danger">Remove</i>
+            </button>
+          </div>
+        </div>
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img class="cart-item-image" src="images/Album 3.png" />
+            <span class="cart-item-title">T-shirt</span>
+          </div>
+          <span class="cart-price cart-column">$17.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1" />
+            <button type="button" class="cart-quantity-btn">
+              <i class="fas fa-trash-alt btn btn-danger">Remove</i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$39.97</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">Imagine Dragons</h3>
+        <ul class="nav nav-social-media">
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-square fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fab fa-youtube fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://spotify.com" target="_blank"
+              ><i class="fab fa-spotify fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

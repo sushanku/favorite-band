@@ -1,0 +1,10 @@
+/* stores.html */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item2 {
+  display: flex;
+  flex-direction: column;
+}
